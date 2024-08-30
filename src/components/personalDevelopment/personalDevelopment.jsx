@@ -1,17 +1,17 @@
 import React from 'react';
-import "./testimonials.css";
+import "./personalDevelopment.css";
 import { Data } from "./Data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from 'swiper';
 
-const Testimonials = () => {
+const personalDevelopment = () => {
   return (
-    <section className="testimonial container section">
-        <h2 className="section__title">Client Feedback</h2>
-        <span className="section__subtitle">Testimonial</span>
-        <Swiper className="testimonial__container"
+    <section className="personalDevelopment container section">
+        <h2 className="section__title">Personal Development</h2>
+        <span className="section__subtitle">Things I've Learned since joining the company</span>
+        <Swiper className="personalDevelopment__container"
             loop={true}
             grabCursor={true}
             spaceBetween={24}
@@ -32,10 +32,10 @@ const Testimonials = () => {
         >
             {Data.map(({id, image, title, description}) => {
                 return (
-                    <SwiperSlide className="testimonial__card" key={id}>
-                        <img src={image} alt="client" className="testimonial__img" />
-                        <h3 className="tetimonial__name">{title}</h3>
-                        <p className="testimonial__description">{description}</p>
+                    <SwiperSlide className="personalDevelopment__card" key={id}>
+                        <img src={image} alt="client" className="personalDevelopment__img" />
+                        <h3 className="personalDevelopment__name">{title}</h3>
+                        <p className="personalDevelopment__description">{description}</p>
                     </SwiperSlide>
                 )
             })}
@@ -44,4 +44,4 @@ const Testimonials = () => {
   );
 }
 
-export default Testimonials;
+export default personalDevelopment;

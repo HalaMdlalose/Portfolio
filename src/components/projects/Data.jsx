@@ -1,26 +1,26 @@
-import Project1 from "../../assets/project1.webp";
-import Project2 from "../../assets/project2.webp";
-import Project3 from "../../assets/project3.webp";
+import Project1 from "../../assets/YCCI Screenshot.png";
+import Project2 from "../../assets/RedpepperOnline.png";
+import Project3 from "../../assets/Photoshoot.png";
 
 
 export const projectsData = [
     {
         id: 1,
         image: Project1,
-        title: "Project 1",
-        category: "A",
+        title: "YCCI Website",
+        category: "Y",
     },
     {
         id: 2,
         image: Project2,
-        title: "Project 2",
-        category: "B",
+        title: "Redpepper Online application",
+        category: "R",
     },
     {
         id: 3,
         image: Project3,
-        title: "Project 3",
-        category: "C",
+        title: "Photoshoot editing",
+        category: "P",
     },
 ];
 
@@ -29,12 +29,12 @@ export const projectsNav = [
         name: "All",
     },
     {
-        name: "A",
+        name: "Y",
     },
     {
-        name: "B",
+        name: "R",
     },
     {
-        name: "C",
+        name: "P",
     },
 ];
