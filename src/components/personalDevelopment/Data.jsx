@@ -11,8 +11,8 @@ export const Data = [
         title: "Technical Skills Development.",
         description: (
             <>
-                Hands-On Experience: I apply my knowledge in real projects, improving my practical skills.<br /><br />
-                New Tools & Technologies I've learnt to use industry-standard tools such as WordPress, enhancing my technical skills.
+                Hands-On Experience: I've applied my knowledge in real projects, improving my practical skills.<br /><br />
+                New Tools & Technologies: I've learnt to use industry-standard tools such as WordPress, enhancing my technical skills.
             </>
         ),
     },
@@ -22,7 +22,7 @@ export const Data = [
         title: "Adaptability & Flexibility.",
         description: (
             <>
-                Dealing with Change: I've Learned to adapt to new situations and project requirements. <br /><br />
+                Dealing with Change: I've Learnt to adapt to new situations and project requirements. <br /><br />
                 Learning Agility: I've had to quickly learn and apply new knowledge in different contexts.
             </>
         ),
@@ -33,8 +33,8 @@ export const Data = [
         title: "Communication Skills",
         description: (
             <>
-                Written Communication: I improve my writing skills by preparing reports and emails. <br /><br />
-                Verbal Communication: I enhance my public speaking and interpersonal skills through meetings and presentations.
+                Written Communication: I've improved my writing skills by preparing reports and emails. <br /><br />
+                Verbal Communication: I've enhanced my public speaking and interpersonal skills through meetings and presentations.
             </>
         ),
     },
@@ -55,7 +55,7 @@ export const Data = [
         title: "Managing personal states ",
         description: (
             <>
-                States: Learnt how to manage my emotions and states by a Ruben along with understanding my Personal powers what they are, how much power and control i have over them and developed triggers to access any state at will
+                States: I've learnt how to manage my emotions and states by a Ruben along with understanding my Personal powers what they are, how much power and control i have over them and developed triggers to access any state at will
                  
             </>
         ),

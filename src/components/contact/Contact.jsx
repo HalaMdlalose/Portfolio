@@ -1,16 +1,25 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import "./contact.css";
 import { HiOutlineMail, HiOutlineArrowSmRight } from "react-icons/hi"
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const form = useRef();
+    const [successMessage, setSuccessMessage] = useState("");
     
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('service_s53x8mc', 'template_fwq8n7v', form.current, 'cXginQ40keRVEt1YV')
-        e.target.reset();
+
+        emailjs.sendForm('service_9p4p7tc', 'template_jo6b9l5', form.current, 'qvS4WMICyjHFL5pUS')
+        .then((result) => {
+            console.log(result.text);
+            setSuccessMessage("Your message has been sent successfully!"); // Set the success message
+            e.target.reset(); // Reset the form
+        }, (error) => {
+            console.log(error.text);
+            setSuccessMessage("Failed to send the message. Please try again later."); // Handle error case
+        });
     };
   
     return (
@@ -29,7 +38,7 @@ const Contact = () => {
                         <h3 className="contact__card-title">Email</h3>
                         <span className="contact__card-data">hmdlalose13@gmail.com</span>
                         
-                        <a href="mailto:cyphersylph@gmail.com" className="contact__button">
+                        <a href="mailto:hmdlalose13@gmail.com" className="contact__button">
                             Write Me{" "} 
                             <HiOutlineArrowSmRight className="contact__button-icon" />
                         </a>
@@ -43,17 +52,17 @@ const Contact = () => {
                 <form ref={form} onSubmit={sendEmail} className="contact__form">
                     <div className="contact__form-div">
                         <label className="contact__form-tag">Name</label>
-                        <input type="text" name="name" className="contact__form-input" placeholder="Type your name" />
+                        <input type="text" name="from_name" className="contact__form-input" placeholder="Type your name" />
                     </div>
 
                     <div className="contact__form-div">
                         <label className="contact__form-tag">Email</label>
-                        <input type="email" name="email" className="contact__form-input" placeholder="Type your email" />
+                        <input type="email" name="from_email" className="contact__form-input" placeholder="Type your email" />
                     </div>
 
                     <div className="contact__form-div contact__form-area">
                         <label className="contact__form-tag">Project</label>
-                        <textarea name="project" cols="30" rows="10" className="contact__form-input" placeholder="Provide some project details..."></textarea>
+                        <textarea name="message" cols="30" rows="10" className="contact__form-input" placeholder="Provide some project details..."></textarea>
                     </div>
 
                     <button href="#contact" className="button button--flex">
@@ -76,6 +85,8 @@ const Contact = () => {
                             ></path>
                         </svg>
                     </button>
+                    {/* Conditionally render success or error message */}
+                    {successMessage && <p className="contact__success-message">{successMessage}</p>}
                 </form>
             </div>
         </div>

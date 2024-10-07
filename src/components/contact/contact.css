@@ -106,6 +106,13 @@
     resize: none;
 }
 
+.contact__success-message {
+    color: green;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
 /* BREAK POINTS */
 @media screen and (max-width: 992px) {
     .contact__container {

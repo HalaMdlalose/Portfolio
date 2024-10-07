@@ -54,6 +54,20 @@
     font-size: var(--smaller-font-size);
 }
 
+.footer__address__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    margin-bottom: var(--mb-2);
+}
+.footer__address {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+
+}
+
 /* BREAK POINTS */
 @media screen and (max-width: 992px) {
     .footer__social-link {

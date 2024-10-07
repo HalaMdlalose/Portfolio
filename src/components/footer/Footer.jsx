@@ -2,11 +2,19 @@ import React from 'react';
 import "./footer.css";
 import { FiTwitter, FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi';
 
+
+
 const Footer = () => {
+
+    const addresses = [
+        "Rivonia, Sandton, South Africa",
+        "Arbor Park, Newcastle, South Africa",
+        "Sharon Park, Nigel, South Africa"
+      ];
   return (
     <footer className="footer">
         <div className="footer__container container">
-            <h1 className="footer__title">Halalisani Mdlalose</h1>
+            <h1 className="footer__title">Halalisani Asanda Mdlalose</h1>
             <ul className="footer__list">
                 <li>
                     <a href="#about" className="footer__link">About</a>
@@ -29,6 +37,19 @@ const Footer = () => {
                     <FiLinkedin />
                 </a>    
             </div>
+
+            {/* <div className='footer__address__list'>
+            <p className="footer__address__link">Rivonia, Sandton, South Africa</p> 
+            <p className="footer__address__link">Arbor Park, Newcastle, South Africa</p> 
+            <p className="footer__address__link">Sharon Park, Nigel, South Africa</p> 
+
+            
+            </div> */}
+
+            <p className="footer__address">
+              {addresses.join("  |  ")}
+            </p> {/* Added address with separator */}
+            
             <span className="footer__copy"></span>
         </div>
     </footer>

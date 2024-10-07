@@ -17,7 +17,7 @@ const Backend = () => {
                 <div className="skills__data">
                     <HiCheckBadge />
                     <div>
-                        <h3 className="skills__name">SpringBoot</h3>
+                        <h3 className="skills__name">C# and.NET</h3>
                         <span className="skills__level">Basic</span>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ const Backend = () => {
                 <div className="skills__data">
                     <HiCheckBadge />
                     <div>
-                        <h3 className="skills__name">npm</h3>
+                        <h3 className="skills__name">Oracle DB</h3>
                         <span className="skills__level">Basic</span>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ const Backend = () => {
                     <HiCheckBadge />
                     <div>
                         <h3 className="skills__name">Git</h3>
-                        <span className="skills__level">Intermediate</span>
+                        <span className="skills__level">Basic</span>
                     </div>
                 </div>
             </div>
